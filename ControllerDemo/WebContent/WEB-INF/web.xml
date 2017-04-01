@@ -20,16 +20,20 @@
 		<servlet-name>AddLeagueServlet</servlet-name>
 		<url-pattern>/admin/AddLeagueServlet</url-pattern>
 	</servlet-mapping>
-	
 	<servlet>
-		<servlet-name>ErrorPageServlet</servlet-name>
-		<servlet-class>view.ErrorPageServlet</servlet-class>
+		<servlet-name>AddLeagueFormServlet</servlet-name>
+		<servlet-class>view.AddLeagueFormServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
-		<servlet-name>ErrorPageServlet</servlet-name>
-		<url-pattern>/admin/ErrorPageServlet</url-pattern>
+		<servlet-name>AddLeagueFormServlet</servlet-name>
+		<url-pattern>/admin/AddLeagueFormServlet</url-pattern>
 	</servlet-mapping>
-	
+
+
+
+	<!-- <servlet> <servlet-name>ErrorPageServlet</servlet-name> <servlet-class>view.ErrorPageServlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>ErrorPageServlet</servlet-name> 
+		<url-pattern>/admin/ErrorPageServlet</url-pattern> </servlet-mapping> -->
 	<servlet>
 		<servlet-name>SuccessServlet</servlet-name>
 		<servlet-class>view.SuccessServlet</servlet-class>

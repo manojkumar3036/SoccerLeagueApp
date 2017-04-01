@@ -70,7 +70,7 @@ public class AddLeagueServlet extends HttpServlet {
 			
 			if(!errorMsgs.isEmpty())
 			{
-				RequestDispatcher view=request.getRequestDispatcher("ErrorPageServlet");
+				RequestDispatcher view=request.getRequestDispatcher("AddLeagueFormServlet");
 				view.forward(request, response);
 			}
 			
@@ -87,7 +87,7 @@ public class AddLeagueServlet extends HttpServlet {
 			// Let's Handle any unexpected exceptions
 		} catch (Exception e) {
 			errorMsgs.add(e.getMessage());
-			RequestDispatcher view=request.getRequestDispatcher("ErrorPageServlet");
+			RequestDispatcher view=request.getRequestDispatcher("AddLeagueFormServlet");
 			view.forward(request, response);
 			
 			// Log stack trace
