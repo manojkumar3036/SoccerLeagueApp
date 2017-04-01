@@ -44,7 +44,7 @@ public class AddLeagueFormServlet extends HttpServlet {
 
 	private void generateView(HttpServletRequest request, HttpServletResponse response) throws IOException {
 		// set page title
-		String pageTitle = "Duke's Soccer League: Error Page";
+		String pageTitle = "Duke's Soccer League: Add a League Page";
 		// Retrieve the errorMsgs from the request scope
 		List errorMsgs = (List) request.getAttribute("errorMsgs");
 		// specify the set content type
