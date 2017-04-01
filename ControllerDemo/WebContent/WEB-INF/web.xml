@@ -23,6 +23,10 @@
 	<servlet>
 		<servlet-name>AddLeagueFormServlet</servlet-name>
 		<servlet-class>view.AddLeagueFormServlet</servlet-class>
+		<init-param>
+		<param-name>seasons-list</param-name>
+		<param-value>Spring,Summer,Autumn,Winter</param-value>
+		</init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddLeagueFormServlet</servlet-name>
